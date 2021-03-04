@@ -9,3 +9,9 @@ RUN pip install -r requirements.txt
 
 # after installs are done, remove requirements file
 RUN rm requirements.txt
+
+# copy repo into container
+COPY . ${HOME}
+USER root
+RUN chown -R ${NB_UID} ${HOME}
+USER ${NB_USER}

@@ -13,3 +13,10 @@ Next, we build a docker image from the `Dockerfile` from within this directory:
 Start the image:
 `docker run -p 8888:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work jupyter/datascience-notebook-dmacp`
 
+
+## Mapping AC contributions by similarity
+
+View as
+- [Static webpage](http://uclab.fh-potsdam.de/dmacp/umap_dmacp.html)
+- [Jupyter notebook](https://github.com/nrchtct/umap_dmacp/blob/master/umap_dmacp.ipynb)
+- [Binder](https://mybinder.org/v2/gh/nrchtct/umap_dmacp/HEAD)
