@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 RUN rm requirements.txt
 
 # copy repo into container
-COPY . ${HOME}
+COPY *.ipynb ${HOME}/work
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
