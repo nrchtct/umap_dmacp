@@ -1,0 +1,2 @@
+umap-learn[plot]
+requests_cache
